@@ -78,17 +78,18 @@ public class Education {
 ## 💳 Licenses
 
 ```sql
-SELECT *
+SELECT license_name, acquired_at
 FROM licenses
-WHERE owner = '박민수';
+WHERE owner = '박민수'
+ORDER BY acquired_at ASC;
 
-+----------------+---------+
-| License        | Date    |
-+----------------+---------+
-| 정보처리기사    | 2024.12 |
-| SQLD           | 2025.04 |
-| ADsP           | 2025.03 |
-+----------------+---------+
++----------------+-------------+
+| license_name   | acquired_at |
++----------------+-------------+
+| 정보처리기사     | 2024.12     |
+| ADsP           | 2025.03     |
+| SQLD           | 2025.04     |
++----------------+-------------+
 ```
 
 ---
